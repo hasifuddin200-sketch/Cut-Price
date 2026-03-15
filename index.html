@@ -10,13 +10,13 @@ background:black;
 overflow:hidden;
 }
 
-iframe{
+video{
 position:fixed;
 top:0;
 left:0;
 width:100%;
 height:100%;
-border:none;
+object-fit:cover;
 }
 </style>
 
@@ -24,7 +24,9 @@ border:none;
 
 <body>
 
-<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1&controls=0"></iframe>
+<video autoplay muted loop playsinline>
+  <source src="video.mp4" type="video/mp4">
+</video>
 
 </body>
 </html>
